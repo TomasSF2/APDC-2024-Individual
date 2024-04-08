@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form>
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="3" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Password Confirmation</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="3" required>
+            </div>
+            <div class="privacy-container">
+                <div class="radio-group">
+					<label for="privacy">Privacy</label>
+                    <input type="radio" id="public" name="privacy" value="public" checked>
+                    <label for="public" class="radio-label">Public</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="private" name="privacy" value="private">
+                    <label for="private" class="radio-label">Private</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" name="occupation">
+            </div>
+            <div class="input-group">
+                <label for="workplace">Workplace</label>
+                <input type="text" id="workplace" name="workplace">
+            </div>
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="input-group">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="zipcode">
+            </div>
+            <div class="input-group">
+                <label for="nif">NIF</label>
+                <input type="text" id="nif" name="nif">
+            </div>
+            <button type="submit">Register</button>
+            <div class="login-link">
+                Already have an account? <a href="../login/login.html">Login</a>
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script> <!-- Include the JavaScript file -->
+</body>
+</html>
